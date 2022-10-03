@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
             }
         }
 
-        if((!day_week.equals("7") && !day_week.equals("6") && !day_week.equals("5") && !day_week.equals("4")) && sp.getString("f"+date,"0").equals("0")){
+        if(sp.getString("f"+date,"0").equals("0")){
             img_social.setImageDrawable(getResources().getDrawable(R.drawable.ic_code_svgrepo_com));
         }else if(min.equals("Family")){
             img_social.setImageDrawable(getResources().getDrawable(R.drawable.ic_family_svgrepo_com));
@@ -355,7 +355,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                     img_social.setImageDrawable(getResources().getDrawable(R.drawable.ic_family_svgrepo_com));
                     tLitros = 2;
                 }
-                break; //Test commit
+                break;
             case 5:
                 tv_weekend_plan_5.setTextColor(Color.RED);
                 if(s2i(day_week)==4){
