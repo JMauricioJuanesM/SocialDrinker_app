@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#028afd</color>
+    <color name="colorPrimaryLight">#469499</color>
+    <color name="colorPrimaryDark">#374B54</color>
+    <color name="colorAccent">#028afd</color>
+    <color name="background">#374B54</color>
+    <color name="logoSecundary">#072779</color>
+    <color name="logoPrimary">#028afd</color>
+
+    <color name="colorGen01">#31BBB8</color>
+    <color name="colorGen02">#374B54</color>
+    <color name="colorGen03">#A0CF30</color>
+    <color name="colorGen04">#FBD77A</color>
+    <color name="colorGen05">#32A7BB</color>
+    <color name="colorGen06">#FAED3A</color>
+    <color name="colorGen07">#968D55</color>
+    <color name="colorGen08">#D58B0D</color>
+    <color name="colorGen09">#E96556</color>
+    <color name="colorGen10">#20BFB5</color>
+    <color name="colorGen11">#E93645</color>
+    <color name="colorGen12">#25D095</color>
+    <color name="colorGen13">#E4DC75</color>
+    <color name="colorGen14">#AAA69F</color>
+    <color name="colorGen15">#53DB5D</color>
+</resources>
