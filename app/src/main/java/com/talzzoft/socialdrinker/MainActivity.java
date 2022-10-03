@@ -355,7 +355,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                     img_social.setImageDrawable(getResources().getDrawable(R.drawable.ic_family_svgrepo_com));
                     tLitros = 2;
                 }
-                break;
+                break; //Test commit
             case 5:
                 tv_weekend_plan_5.setTextColor(Color.RED);
                 if(s2i(day_week)==4){
