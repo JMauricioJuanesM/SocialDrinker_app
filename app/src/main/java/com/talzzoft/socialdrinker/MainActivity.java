@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
             }
         }
 
-        if(sp.getString("f"+date,"0").equals("0")){
+        if(sp.getString("f"+date,"0").equals("0") && (!day_week.equals("7") && !day_week.equals("6")) && s2i(sp.getString("f"+week_y,"0")) <= getLimitFestiveDays()){
             img_social.setImageDrawable(getResources().getDrawable(R.drawable.ic_code_svgrepo_com));
         }else if(min.equals("Family")){
             img_social.setImageDrawable(getResources().getDrawable(R.drawable.ic_family_svgrepo_com));
@@ -463,6 +463,15 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         g_month = ms;
         tv_date_text.setText(date_text);
         week_y = FormActivity.getWeekOfYear(date);
+    }
+
+    public int getLimitFestiveDays(){
+        if(g_month.equals("10") || g_month.equals("06") || g_month.equals("02")){
+            return 0;
+        }else if(g_month.equals("12") || g_month.equals("08") || g_month.equals("04")){
+            return 4;
+        }
+        return  1;
     }
 
 }

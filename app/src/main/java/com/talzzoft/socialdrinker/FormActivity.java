@@ -41,6 +41,7 @@ public class FormActivity extends AppCompatActivity implements DatePickerDialog.
     String f_days;
     String week_y;
     String g_month;
+    Season season;
 
     Calendar c;
 
@@ -69,6 +70,8 @@ public class FormActivity extends AppCompatActivity implements DatePickerDialog.
         date_text="Date: "+date_text;
         dateText.setText(date_text);
         week_y = getWeekOfYear(date);
+
+        season = new Season(s2i(g_month));
 
         checkCheckbox(sharedPreferences);
 
@@ -313,7 +316,7 @@ public class FormActivity extends AppCompatActivity implements DatePickerDialog.
         if(g_month.equals("10") || g_month.equals("06") || g_month.equals("02")){
             return 0;
         }else if(g_month.equals("12") || g_month.equals("08") || g_month.equals("04")){
-            return 3;
+            return 4;
         }
         return  1;
     }
